@@ -3,7 +3,8 @@ Feature: DemoFeature
     As a development team
     we want to demonstrate the cpp step implementations
 
-Background: SomeBackgorund
+Background: Test Background
+    Background setup for demonstration
     Given I wait 1 seconds test
 
 @demo01

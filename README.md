@@ -2,24 +2,23 @@
 
 - Install ruby [version 3.1.x](https://rubyinstaller.org/downloads/)
 - execute `gem install bundle`
-- from folder `cucumber_test` execute `bundle`
+- from folder `cucumber_wire_test` execute `bundle`
 
-# Build
+# Build recommendations
 
-```
-    mkdir build && cd build && cmake ..
-    make -j16
-```
+Using the VS Code reopen the project in the dev container, select the GCC x86 toolchain and build
+inside the container
+(Building on windows using MS Visual Studio 2017+ works as well)
 
 # Executing tests
 
-- From the build dir run the cpp executable
+- From the containerd vscode terminal
 
 ```
-    ./cucumber_wire_proxy/cucumber_test.cucumber_wire_proxy
+    .\build\cucumber_wire_proxy\cucumber_test.cucumber_wire_proxy
 ```
 
-- From top dir
+- From the host system from cucumber_wire_test
 
 ```
     cucumber --format pretty --tag "@demo01"

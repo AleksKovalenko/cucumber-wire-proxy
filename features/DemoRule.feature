@@ -4,8 +4,10 @@ Feature: DemoFeature
     we want to demonstrate the cpp step implementations
 
 Rule: Sectioning rule
+    Rule example
 
-Background: SomeBackgorund
+Background: Test Background
+    Background setup for demonstration
     Given I wait 1 seconds test
 
 @demo_b01
