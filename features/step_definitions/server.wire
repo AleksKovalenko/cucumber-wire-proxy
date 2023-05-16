@@ -1,0 +1,4 @@
+host: <%= ENV['CUCUMBER_IP'] || '127.0.0.1' %>
+port: <%= ENV['CUCUMBER_PORT'] || 90 %>
+timeout:
+    invoke: 1200
